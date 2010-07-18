@@ -17,5 +17,5 @@ Gem::Specification.new do |s|
   s.rdoc_options = ['--main', 'README.rdoc', '--charset=UTF-8']
   s.extra_rdoc_files = ['README.rdoc', 'LICENSE', 'CHANGELOG.rdoc']
   
-  s.files = Dir['Rakefile', '{bin,lib,test,spec}/**/*', 'README*', 'LICENSE*'] & `git ls-files`.split("\n")
+  s.files = Dir['Rakefile', '{bin,lib,test,spec}/**/*', 'README*', 'LICENSE*'] & `/usr/bin/env git ls-files`.split("\n")
 end
